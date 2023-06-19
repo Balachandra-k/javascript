@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name"id="name" onkeyup="validation()">
+            <span id="status"></span>
+        </form>
+
+        <script>
+            let x = document.getElementById("name");
+            let status = document.getElementById("status");
+
+            function validateName(){
+                if(x.value.length >= 4 & x.value.length < 10 ){
+                    status.style.color = "green";
+
+                }else {
+                    status.innerText = "input should be greter then 4 and less then 10 chercters";
+                    status.style.color ="#ff0000"
+                }
+            }
+        </script>
+    </body>
+</html>

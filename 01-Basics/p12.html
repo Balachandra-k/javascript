@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+</head>
+<body>
+    <center>
+        <h1>Funtion</h1>
+    </center>
+    <pre>
+        1. Default Function(No permeter , No Return)
+        2. Without Premeter, with return value
+        3. With Paremeter ,without return value
+        4.with peremeter, with return value
+    </pre
+    <hr>
+    <h1 onclick="">Defucult Function (No permeter , No Return) </h1>
+    <script>
+        function defaultFunction(){
+            document.write("This is Defuclt Function")
+        }
+        defaultFunction();
+    </script>
+    <hr>
+    <h1>Without Premeter, with return value</h1>
+    <script>
+        function addFunction(){
+            let  firstNumber = 10, secondNumber = 20;
+            sum = firstNumber + secondNumber;
+            return sum;
+            document.write(sum);
+        
+        }
+        document.write("<strong>Without Paremeter,with return value : $ {addFunction()}</strong>")
+    </script>
+    <hr>
+    <h1>3. With Paremeter ,without return value
+    </h1>
+    <script>
+        function studDetails(firstName, lastName){
+            document.write(`<p>First Peerameter Value is: ${firstName}</p>`);
+            document.write(`<p>last Peerameter Value is: ${lastName}</p>`);
+            let fn = firstName
+            let ln = lastName
+
+            document.write(`first Varible Value is :${fn}</p>`);
+            document.write(`last Varible Value is :${ln}</p>`);
+
+            let fullName = fn + " " + ln;
+            document.write(`<p>Full Name Varible value is : ${fn}</p>`);
+            
+        }
+         studDetails ("html" , "css")
+    </script>
+    <hr>
+    <h1>4.with peremeter, with return value</h1>
+    <script>
+        function studDetails(firstName, lastName){
+            document.write(`<p>First Peerameter Value is: ${firstName}</p>`);
+            document.write(`<p>last Peerameter Value is: ${lastName}</p>`);
+            let fn = firstName
+            let ln = lastName
+
+            document.write(`first Varible Value is :${fn}</p>`);
+            document.write(`last Varible Value is :${ln}</p>`);
+
+            let fullName = fn + " " + ln;
+            return fullName;
+            document.write(`<p>Full Name Varible value is : ${fn}</p>`);
+            
+        }
+         document.write(studDetails)
+
+    </script>
+    <hr>
+    <!--ESMA SCRIPT CODE-->
+    <h1>ESMA SCRIPT CODE</h1>
+    <script>
+        document.write("<h1>Function Defining..!</h1>");
+        function sum(a,b) {
+            return a + b;
+
+        }
+        document.write(`<h3> sum =${sum(33,44) } </h3>`);
+
+        document.write("<h1> function Express ..!</h1>");
+        let fullName = function(firstName, lastName){
+        return firstName + " " + lastName
+    };
+    document.write(`<h3> fullName =${fullName("html,css")}</h3>`);
+
+    document.write(`<h1> Arow Function</<h1>`);
+        let js = () => {
+            document.write("this is arrow function")
+        }
+        js();
+        let rem = (a,b) => {
+            return a%b
+        }
+        document.write(`<h3> rem = ${rem(33,4)}</h3>`);
+    </script>
+    <hr>
+    <h1>Call back function..!</h1>
+    <script>
+        function howAreYou(question, yes, no){
+            if(confirm(question)){
+                yes();
+            }
+            else{
+                no();
+            }
+        }
+        howAreYou("How is your health",function(){document.write("This is yes function")}, function(){document.write("this is no function")});
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3> Prototype keyword - is used to create a property to an constructor exsternaly</h3>
+
+        <script>
+            function user() {
+                this.name = "balu";
+                this.getName = function(){
+                    document.write(`<h3> my name is  ${this.name}<h3>`);
+                }
+                this.dispaly = function(){
+
+                }
+            }
+
+            //constuctor.prototype.property = value ;
+            user.prototype.email = "balu123@gmail.com"
+            user.pototype.getEmail = () => {
+                document.write (`<h3> email = ${x.email}</h3>`);
+
+            };
+
+            let x = new user ();
+
+            document.write(`<h3> name ${x.name}</h3>`);
+            document.write(`<h3> email = ${x.email}</h3>`);
+            x.getName();
+            x.getEmail();
+        </script>
+    </body>
+</html>

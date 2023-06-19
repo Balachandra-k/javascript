@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Eevent</title>
+</head>
+<body>
+    <h3 id="out"></h3>
+    <form onsubmit="submitHandeler()" onreset="resetHandeler()">
+        <label for="">User Name</label>
+        <input type="text" name="user" id="user">
+        <br><br>
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+
+        <button type="submit">LOGin</button>
+        <input type="reset" value="Reset">
+    </form>
+    <script>
+        function submitHandeler(event){
+            event.preventDefacult(); //to aviod the page refresh//
+            let user = document.getElementById("user").value;
+            let pass = document.getElementById("pass").value;
+
+            document.getElementById("out").innerText = `username = ${user} and password is ${pass}`;
+        }
+        function resetHandeler(){
+            alert("from input is clared");
+        }
+    </script>
+
+    
+</body>
+
+</html>

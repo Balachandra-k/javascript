@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+    <style>
+        table,th,td{
+            background-color: rgb(4, 183, 243);
+            border:2px solid rgb(6, 6, 6);
+            color: rgb(253, 249, 249);
+            border-collapse: collapse;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Condition statements..!</h1>
+    </center>
+    <hr>
+
+    <ol>
+        <li>simple if</li>
+        <li> if flase</li>
+        <li>if elase lader</li>
+        <li>Swith case</li>
+    </ol>
+    <hr>
+
+    <!-- <script>
+        function testCondation(){
+            letfirstNumber = 30 ,secondNumber = 20;
+        //     if(firstNumber == secondNumber){
+        //         alert("condation is true")
+        //     }else{
+        //         alert("condition is not true..!");
+        //     }
+        // 
+        let message = firstNumber < secondNumber ? "condation is true":"condation is flase";
+        document.write(message);
+        }
+        testCondation();
+    </script> -->
+    <br><hr><br>
+
+    <h2>Largest of two numbers using js</h2>
+    <table>
+    <tr>
+        <th><label for="">Enter first number</label></th>
+        <td><input type="number" name="firstNumber" id="firstNumber" placeholder="firstNumber"></td>
+    </tr>
+    <tr>
+        <th><label for="">Enter Second number</label></th>
+        <td><input type="number" name="SecondNumber" id="SecondNumber" placeholder="SecondNumber"></td>
+
+    </tr>
+    <tr>
+        <th><label for="">Enter third number</label></th>
+        <td><input type="number" name="thirdNumber" id="thirdNumber" placeholder="thirdNumber"></td>
+
+    </tr>
+    <tr>
+        <th><label for="">Result :</label></th>
+        <td> <p id="Result"></p></td>
+
+    </tr>
+    <tr>
+    <td> <button type="button" id="btn-cnd">submit</button></td>
+    <td> <button type="button" id="btn-cnd-1">Cancel</button></td>
+    </tr>
+</table>
+<script>
+    function checkCondation(){
+        let firstNumber = parseInt(document.getElementById("firstNumber").value;
+        let secondNumber = + document.getElementById("secondNumber").value;
+        let thirdNumber  = + document.getElementById("thirdNumber").value;
+        let result = document.getElementById("result")
+
+            console.log(typeof firstNumber)
+            console.log(typeof secondNumber)
+            console.log(typeof thirdNumber)
+
+           if (firstNumber === secondNumber&& thirdNumber === firstNumber) {
+            result.innerHTML =" Number are equal";
+           } else if (firstNumber > secondNumber && firstNumber > thirdNumber){
+            result.innerHTML =  "First Number is big";
+           }else if (secondNumber > firstNumber && secondNumber > thirdNumber){
+            result.innerHTML =  "second Number is big";
+           }else if (thirdNumber > firstNumber && thirdNumber > secondNumber){
+            result.innerHTML =  "third Number is big";
+           
+"           
+           
+
+    }
+    document.getElementById("btn-cnd").onclick = checkCondation;
+</script>
+</body>
+</html>

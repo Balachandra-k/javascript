@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Getter and setter</h1>
+        <script>
+            class Person {
+                constructor(){
+                    this.email=" ";
+
+                }
+                get email (){
+                    return`my mail is ${this.email}`;
+                }
+                set email (val){
+                    this._myEmail = val;
+                }
+            }
+            let x = new Person ();
+            console.log("x=",x);
+            x.email = "balu@gmail.com"
+            document.write(`<h2>${x.email}</h2>`);
+
+        </script>
+    </body>
+</html>

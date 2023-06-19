@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+</head>
+<body>
+    <center>
+        <h1>JS-Varible.!</h1>
+    </center>
+    <pre>
+         DATATYPE
+         1) Primitive Data Types
+         2) Non-Primitive Derived Data Types
+
+
+         1) Primitive Data Types
+            -INT(Integer ) ->IT accept only round number EX= 0-9
+            -Flot -> it caapt decimel value ex = 10.5
+            -Boolean  -> Eathier TRUE or FLASE 
+            -Char -> It accpt single character ex = apple
+            -void-> returns null value
+
+            2) Non-Primitive Derived Data Types
+            -Array
+            -Structure
+            -Union
+            -Enum
+            -Pointer
+            -Function
+    </pre>
+    <script>
+        //var, let and const are the keywords, it used to declare the varble
+        var firstvarible;
+        document.write(firstvarible,"<br>")
+        document.write("<b>without value : </b>" , firstvarible,"<br>");
+
+        firstvariable = "hello js";
+        document.write("<b>With value : </b>", firstvarible,"<br>");
+        document.write("<b>With value : </b>" + firstvarible,"<br>");
+        document.write("<b>With value : " + firstvarible,"</b> <br>");
+        document.write("<b>With value :", firstvarible,"</b> <br>");
+        document.write(`<b>withvalue :${firstvarible}</b> <br>`);
+        document.write(typeof (firstvarible), "<br> <hr>") ;
+        
+        firstvariable = 1000;
+        document.write("<b>With value : </b>", firstvarible,"<br>");
+        document.write("<b>With value : </b>" + firstvarible,"<br>");
+        document.write("<b>With value : " + firstvarible,"</b> <br>");
+        document.write("<b>With value :", firstvarible,"</b> <br>");
+        document.write(`<b>withvalue :${firstvarible}</b> <br>`);
+        document.write(typeof (firstvarible), "<br> <hr>") ;
+
+        firstvariable = 1000.5555555;
+        document.write("<b>With value : </b>", firstvarible,"<br>");
+        document.write("<b>With value : </b>" + firstvarible,"<br>");
+        document.write("<b>With value : " + firstvarible,"</b> <br>");
+        document.write("<b>With value :", firstvarible,"</b> <br>");
+        document.write(`<b>withvalue :${firstvarible}</b> <br>`);
+        document.write(typeof (firstvarible), "<br> <hr>") ;
+
+        firstvariable = true;
+        document.write("<b>With value : </b>", firstvarible,"<br>");
+        document.write("<b>With value : </b>" + firstvarible,"<br>");
+        document.write("<b>With value : " + firstvarible,"</b> <br>");
+        document.write("<b>With value :", firstvarible,"</b> <br>");
+        document.write(`<b>withvalue :${firstvarible}</b> <br>`);
+        document.write(typeof (firstvarible), "<br> <hr>") ;
+
+        firstvariable = flase;
+        document.write("<b>With value : </b>", firstvarible,"<br>");
+        document.write("<b>With value : </b>" + firstvarible,"<br>");
+        document.write("<b>With value : " + firstvarible,"</b> <br>");
+        document.write("<b>With value :", firstvarible,"</b> <br>");
+        document.write(`<b>withvalue :${firstvarible}</b> <br>`);
+        document.write(typeof (firstvarible), "<br> <hr>") ;
+        /*var is a weaker single and always have global scope */
+        /*let and const are block scope varibles*/
+    </script>
+</body>
+</html>

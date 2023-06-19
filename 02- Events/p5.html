@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Event</title>
+    <style>
+        div {
+            background-color: aqua;
+            color: #fff;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4 {
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h3>Onmousewheel()</h3>
+    <h4 id="output"></h4>
+    <div id="txt" onmousewheel= "wheelHandeler()" onscroll="wheelHandeler()">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eius minus aut dolorem sint dolorum non harum quam, ea aspernatur similique. Fuga ratione voluptas minima delectus ex unde perferendis accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis exercitationem provident unde eaque laborum ea labore? Doloribus provident, suscipit, fugiat illo cupiditate sit dicta id dolorum vel, autem alias quasi!</p>
+    </div>
+
+    <script>
+        function wheelHandeler(){
+            document.getElementById("output").innerHTML = document.getElementById("txt").scrollTop + "px";
+        }
+    </script>
+</body>
+</html>

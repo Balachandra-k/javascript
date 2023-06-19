@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Window objects</h3>
+        <button onclick="alertHandeler()">aleart</button>
+        <button onclick="promptHandeler()">Promot</button>
+        <button onclick="confirmHandeler()">Confirm</button>
+
+        <script>
+            /*alert,prompt,confirm,oprn,close => BOM(broweser object model)*/$
+
+            function alertHandeler(){
+                window.alert("alert message")
+            }
+            function promptHandeler(){
+                var a = window.prompt("enter your name");
+                alert(`my name is ${a}`);
+            }
+            function confirmHandeler(){
+                var x = window.confirm("Are you sure to delete a file?");
+                /*ok ->true,cancel->false*/
+
+                if(x){
+                    alert("file deleted sucessfuly");
+
+                }else{
+                    alert("oops!..sorry file delete termationed");
+                }
+            }
+        </script>
+    </body>
+</html>

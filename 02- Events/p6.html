@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Event</title>
+</head>
+<body>
+    <center>
+        <h1>ONSELECT,ONCOPY, ONCUT,ONPASTE</h1>
+    </center>
+   <hr>
+   <h3>Write some contant inside input and then select and copy it..</h3>
+
+   <from action="">
+    <label for="">Enter some conatent </label>
+    <input type="text" name="first" id="first" onselect="sel()" oncopy="cop()">
+    <br><hr>
+    <textarea name="" id="" cols="30" rows="10" onpaste ="pas()" oncut="cut()"></textarea>
+   </from>
+
+   <script>
+    function sel(){
+        alert("contant has selected")
+    }
+    function cop(){
+    alert("contant has copied")
+}
+    function pas(){
+        alert("cotant has pasted")
+    }
+    function cut(){
+        alert("you have cut the contant , ready to paste")
+    }
+   </script>
+</body>
+</html>

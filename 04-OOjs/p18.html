@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Object inhertance using __proto__</h3>
+
+        <script>
+            let user ={
+                name : "balu",
+                email : "balu@gmail.com"
+            };
+            let user1 = {
+                mobile : "12345678",
+                age :23,
+                __proto__ :user
+
+            }
+            let user2 = {
+                course : "javascript",
+                duration : "3months",
+                __proto__:user1
+            };
+                console.log("user2=",user2);
+
+                document.write(`<h2>${user2.name}</h2>`);
+                document.write(`<h2> ${user2.email}</h2>`);
+                document.write(`<h2>${user2.mobile}</h2>`);
+                document.write(`<h2> ${user2.age}</h2>`);
+                document.write(`<h2>${user2.course}</h2>`);
+                document.write(`<h2> ${user2.duration}</h2>`);
+            
+        </script>
+    </body>
+</html>

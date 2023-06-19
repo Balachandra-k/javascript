@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Event</title>
+</head>
+<body>
+    <center>
+        <h1>onChnage</h1>
+    </center>
+    <h3 id="outPut"></h3>
+        <label for="">techonology</label>
+    <select name="tech" id="tech" onchange="selHander()">
+        <option value="null">chouse techonology</option>
+        <option value="html">HTML</option>
+        <option value="css">css</option>
+        <option value="html">java scrpit</option>
+    </select>
+ <script>
+    function selHander(){
+        let tech = document.getElementById("tech").vaalue;
+        if(tech == "null"){
+        document.getElementById("outPut") .innerHTML ="no value selected"
+    } else {
+        document.getElementById("outPut").innerHTML = `you have selected ${tech}`;
+        }
+    }
+    </script>
+        
+</body>
+</html>

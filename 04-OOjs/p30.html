@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Get and set methods </h1>
+
+        <script>
+            class Car {
+                constructor(){
+                    this.title = " "; //will not used to call
+                }
+                //got to return the value
+                get title (){
+                    return `my car title is = ${this._name}`;//_name => alis property to title
+                }
+                //set assign the value 
+
+                set title (x){
+                    this._name = x;
+
+                }
+            }
+
+            let x = new Car();
+            console.log("x=",x);
+            x.title = "mehindra Thar"; //setter method
+            document.write(`<h1>${x.title}</h1>`);
+        </script>
+    </body>
+</html>

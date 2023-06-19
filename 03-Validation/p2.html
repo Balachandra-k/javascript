@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+<body>
+    <center>E-mail validation</center>
+    <hr>
+    <from autocomplete="off">
+        <label for="">Email </label>
+        <input type="email" name="email" id="email" onkeyup="validation()">
+        <strong id="status"></strong>
+    </from>
+    <script>
+        function validation(){
+            let email =document.getElementById("email").value;
+            let status =document.getElementById("status");
+
+            let pattern = /^\S+@\S+\.\S+$/ //example balivaru323@gmail.com
+
+            if(email.length ==0){
+            status.innerText ="Email field must be filled";
+            status.style.color = 'red';
+            }else{
+                if(pattern.test(email) == false){
+                status.innerText = "invaild email-id";
+                status.style.color = "red";
+                }else{
+                    status.innerText = "vaild email-id";
+                    status.style.color ="green";
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

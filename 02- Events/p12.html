@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video src="assets/media/videoplayback.mp4" height="200" id="videoFile"></video>
+
+    <hr>
+
+    <button onclick="playHandeler()">play</button>
+    <button onclick="puseHandeler()">puse</button>
+    <button onclick="fullScreen()">fullscreen</button>
+
+    <script>
+        function playHandeler(){
+            document.getElementById("videoFile").play();
+
+        }
+        function puseHandeler(){
+            document.getElementById("videoFile").pause();
+            
+        }
+        function fullScreen(){
+            document.getElementById("videoFile").requestFullscreen();
+            
+        }
+    </script>
+</body>
+</html>

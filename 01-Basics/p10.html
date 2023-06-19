@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic</title>
+</head>
+<body>
+    <center>
+        <h1>SCOPES</h1>
+    </center>
+    <hr>
+    <script>
+        // let and consit always have local (block)scope
+        // var is a weaker single and always have global scope
+        // let and const
+        let x = 15;
+
+        if(x > 12){
+            let a = 567;
+            var b =123456;
+            document.write(`<h3>local A = $ { a } </h3`);
+                document.write(`<h3>local b = $ { b } </h3`);
+                    document.write(`<h3>local c = $ { c } </h3`);
+ 
+ 
+        }
+        document.write("<hr>");
+
+        document.write(`<h3> global x = $ { x } </h3>`);
+        document.write(`<h3> global b = $ { b } </h3>`);
+        ocument.write(`<h3> global a = $ { a } </h3>`);
+
+    </script>
+</body>
+</html>

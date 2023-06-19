@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> class ES-6 -> GROUP OBJECTS (STATE $ behaviour)</h3>
+    <p> state => varibles -> properties </p>
+    <p> Behavior -> methods </p>
+
+    <script>
+        class user {
+            //bulit in method 
+            constructor(){
+                //property => ststes
+                this.name = "mohan";
+                this.email = "balu@123gmail.com";
+                document.write(`<h3> Constructor method</h3>`);
+
+            }
+            display(){
+                //method => behaviors 
+                document.write(`<h3> name is ${this.name}</h3>`);
+
+            }
+            print(){
+                    document.write(`<h1> email is ${this.email}</h3>`);
+
+                    
+            }
+        }
+        let x = new user();
+        console.log("x=",x);
+    </script>
+</body>
+</html>
