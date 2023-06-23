@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3> Set Constructor</h3>
+        <script>
+            let emp = new Set();
+            emp.add("raju");
+            emp.add("mahesh");
+            emp.add("suri");
+            emp.add("prakesh");
+
+            console.log("set = ",emp.entries());
+
+            emp.forEach(function(item){
+                document.write(`<h1> ${item}</h1>`);
+            });
+            /* has()*/
+            console.log("has('raju')=",emp.has('raju'));//true
+            console.log("has('tanu')=",emp.has('tanu'));//false
+
+            emp.delete("raju");//delete set
+
+            console.log("after delete =",emp.entries());
+            console.log("has('raju')=", emp.has('raju'));//false
+
+        </script>
+    </body>
+</html>
